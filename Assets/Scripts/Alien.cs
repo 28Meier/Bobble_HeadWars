@@ -61,5 +61,6 @@ public class Alien : MonoBehaviour {
     {
         SoundManager.Instance.PlayOneShot(SoundManager.Instance.alienDeath);
         Destroy(gameObject);
+        SoundManager.Instance.PlayOneShot(SoundManager.Instance.alienDeath);
     }
 }
