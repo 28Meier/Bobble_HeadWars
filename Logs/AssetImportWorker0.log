@@ -856,3 +856,115 @@ Received Import Request.
 Start importing Assets/Scripts/Alien.cs using Guid(dc6cd2b0bc2b5bf49b2967f6f0f2c50a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7ed27c3ac10b40ec3861cb59c02e118') in 0.003981 seconds 
   Import took 0.006215 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008565 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.170 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1171ms)
+		BeginReloadAssembly (135ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (950ms)
+			LoadAssemblies (111ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (287ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (405ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (314ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1402 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.3 MB.
+System memory in use after: 68.4 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1874.
+Total: 3.422800 ms (FindLiveObjects: 0.176700 ms CreateObjectMapping: 0.032300 ms MarkObjects: 3.193000 ms  DeleteObjects: 0.019100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 84.734947 seconds.
+  path: Assets/Scripts/Alien.cs
+  artifactKey: Guid(dc6cd2b0bc2b5bf49b2967f6f0f2c50a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Alien.cs using Guid(dc6cd2b0bc2b5bf49b2967f6f0f2c50a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62f7c6c16b272eae60ee13df4bc16909') in 0.008363 seconds 
+  Import took 0.011559 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 232.913002 seconds.
+  path: Assets/Scripts/Gun.cs
+  artifactKey: Guid(7c32e1eff5705cf4b8ac79737185b174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Gun.cs using Guid(7c32e1eff5705cf4b8ac79737185b174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bb142c4ca5e1d5589bf48673ab1803f') in 0.005739 seconds 
+  Import took 0.009167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.832868 seconds.
+  path: Assets/Scripts/Gun.cs
+  artifactKey: Guid(7c32e1eff5705cf4b8ac79737185b174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Gun.cs using Guid(7c32e1eff5705cf4b8ac79737185b174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11b2e8e0d3b75038f407b342932a14d0') in 0.003886 seconds 
+  Import took 0.006913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.181619 seconds.
+  path: Assets/Upgrade.cs
+  artifactKey: Guid(67213110ee30ee0488caf4f00ecba047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Upgrade.cs using Guid(67213110ee30ee0488caf4f00ecba047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b9f0b08bd2a320f43bd90cdff3302b4') in 0.016288 seconds 
+  Import took 0.022621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.412403 seconds.
+  path: Assets/Upgrade.cs
+  artifactKey: Guid(67213110ee30ee0488caf4f00ecba047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Upgrade.cs using Guid(67213110ee30ee0488caf4f00ecba047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41a1bfa22742da5fd996fee4e762f8cf') in 0.004058 seconds 
+  Import took 0.007027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.113326 seconds.
+  path: Assets/Upgrade.cs
+  artifactKey: Guid(67213110ee30ee0488caf4f00ecba047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Upgrade.cs using Guid(67213110ee30ee0488caf4f00ecba047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b49dcc6f20055eef9c277fa95ace4a6') in 0.004004 seconds 
+  Import took 0.006691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 118.141337 seconds.
+  path: Assets/Scripts/GameManager(1).cs
+  artifactKey: Guid(7ff322e44503bea4794ef43ceaff8930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager(1).cs using Guid(7ff322e44503bea4794ef43ceaff8930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee2dc70d35ace8cabd904e16042e3ced') in 0.004020 seconds 
+  Import took 0.006301 seconds .
+
