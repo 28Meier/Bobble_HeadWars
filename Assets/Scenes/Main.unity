@@ -142,6 +142,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   navigationUpdate: 0
+  OnDestroy:
+    m_PersistentCalls:
+      m_Calls: []
+  head: {fileID: 0}
+  isAlive: 1
 --- !u!54 &138052417
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -590,6 +595,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1793718460336910, guid: af389f68059c9fe45be9eba43c8a9412, type: 3}
   launchPosition: {fileID: 1580941754}
+  isUpgraded: 0
+  upgradeTime: 10
 --- !u!1 &443544136
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,6 +888,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &867815167 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1148246063127030, guid: e5bafbba3a71297409e8f8d6cc789c8b, type: 3}
+  m_PrefabInstance: {fileID: 867815164}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &867815168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867815167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c1a95043bf94bd47acbbbc52c57f815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructTime: 3
 --- !u!1 &1032903422
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,11 +952,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421d4f1558ca2bd40872d55dd8640e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  head: {fileID: 0}
   moveSpeed: 50
+  head: {fileID: 0}
   layerMask:
     serializedVersion: 2
     m_Bits: 4096
+  bodyAnimator: {fileID: 0}
+  hitForce: []
+  timeBetweenHits: 2.5
+  marineBody: {fileID: 0}
 --- !u!143 &1032903425
 CharacterController:
   m_ObjectHideFlags: 0
