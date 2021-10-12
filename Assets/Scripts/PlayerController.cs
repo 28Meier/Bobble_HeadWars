@@ -40,6 +40,11 @@ public class PlayerController : MonoBehaviour
     private CharacterController characterController;
     public LayerMask layerMask;
     private Vector3 currentLookTarget = Vector3.zero;
+    public float[] hitForce;
+    public float timeBetweenHits = 2.5f;
+    private bool isHit = false;
+    private float timeSinceHit = 0;
+    private int hitNumber = -1;
 
     // Use this for initialization
     void Start ()
@@ -89,5 +94,39 @@ public class PlayerController : MonoBehaviour
              rotation, Time.deltaTime * 10.0f);
         }
 
+        if (isHit)
+        {
+            timeSinceHit += Time.deltaTime;
+            if (timeSinceHit > timeBetweenHits)
+            {
+                isHit = false;
+                timeSinceHit = 0;
+            }
+        }
     }
-}
+
+    void OnTriggerEnter(Collider other)
+    {
+        Alien alien = other.gameObject.GetComponent<Alien>();
+        if (alien != null)
+        { // 1
+            if (!isHit)
+            {
+                hitNumber += 1; // 2
+                CameraShake cameraShake = Camera.main.GetComponent<CameraShake>();
+                if (hitNumber < hitForce.Length) // 3
+                {
+                    cameraShake.intensity = hitForce[hitNumber];
+                    cameraShake.Shake();
+                }
+                else
+                {
+                    // death todo
+                }
+                isHit = true; // 4
+                SoundManager.Instance.PlayOneShot(SoundManager.Instance.hurt);
+            }
+            alien.Die();
+        }
+
+    }
